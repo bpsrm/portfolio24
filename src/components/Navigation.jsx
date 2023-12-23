@@ -2,31 +2,36 @@ import { Container, Row, Col, Nav, Navbar } from "react-bootstrap";
 
 const Navigation = () => {
   return (
-    <Container>
+    <Container className="fixed-top">
       <Row className="justify-content-center">
-        <Col md={6}>
-          <Navbar expand="lg" className="bg-danger">
-            <Container>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="w-100 justify-content-center">
-                  <Nav.Link href="#home">HOME</Nav.Link>
-                  <Nav.Link href="#about">ABOUT</Nav.Link>
-                  <Nav.Link href="#experience">EXPERIENCE</Nav.Link>
-                  <Nav.Link href="#project">PROJECTS</Nav.Link>
-                  <Nav.Link href="#contact">CONTACT</Nav.Link>
-                  <Nav.Link href="#theme">THEME</Nav.Link>
-                </Nav>
-              </Navbar.Collapse>
+        <Col md={12} lg={7} className="navbar-col">
+          <Navbar expand="lg">
+            <Container className="py-2">
+              <Nav className="w-100 d-flex flex-row justify-content-between">
+                <Nav.Link href="#home" className="">
+                  <i className="fa-solid fa-house pe-2"></i> HOME
+                </Nav.Link>
+                <Nav.Link href="#about" className="">
+                  <i className="fa-solid fa-user pe-2"></i> ABOUT
+                </Nav.Link>
+                <Nav.Link href="#experience" className="">
+                  <i className="fa-solid fa-book pe-2"></i> EXPERIENCE
+                </Nav.Link>
+                <Nav.Link href="#project" className="">
+                  <i className="fa-solid fa-folder pe-2"></i> PROJECTS
+                </Nav.Link>
+                <Nav.Link href="#contact" className="">
+                  <i className="fa-solid fa-message pe-2"></i> CONTACT
+                </Nav.Link>
+                <Nav.Link href="#theme" className="">
+                  <i className="fa-solid fa-moon pe-2"></i> THEME
+                </Nav.Link>
+              </Nav>
             </Container>
           </Navbar>
         </Col>
       </Row>
     </Container>
-    // <Container>
-    //
-    // </Container>
   );
 };
 
