@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Container, Row } from "react-bootstrap";
 import Profile from "@assets/banner-profile.jpg";
+import Resume from "@assets/resume-ponpitak.pdf";
 
 //components
 import SocialBanner from "./SocialBanner";
@@ -11,17 +12,29 @@ const Banner = () => {
       <Container className="banner-container">
         <Row className="text-center justify-content-center">
           <SocialBanner />
-          <h1>
-            HELLO, I'M <span className="name_banner">PONPITAK SIRIMART</span>
+          <h1 className="welcome">
+            HELLO, I'M <p className="name_banner">PONPITAK SIRIMART</p>
           </h1>
           <div className="img-banner">
             <img src={Profile} alt="Banner Profile" />
           </div>
-          <p style={{ fontSize: "20px" }}>
+          <p
+            style={{
+              fontSize: "20px",
+              marginBottom: "20px",
+              color: "var(--darkColor)",
+            }}
+          >
             New Graduates Transforming Dreams into Web Development Realities.
           </p>
 
-          <button className="btn-setting btn-resume">RESUME</button>
+          <a
+            href={Resume}
+            download="resume-ponpitak-2023"
+            className="btn-setting btn-resume text-decoration-none"
+          >
+            RESUME
+          </a>
 
           <div className="scroll-down mt-4">
             <span className="mouse-left">Scroll</span>

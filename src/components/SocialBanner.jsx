@@ -1,4 +1,5 @@
 import "@styles/social-banner.css";
+import { Icon } from "@iconify/react";
 
 const SocialBanner = () => {
   const socialStyle = {
@@ -10,16 +11,31 @@ const SocialBanner = () => {
   };
 
   return (
-    <div style={socialStyle}>
+    <div style={socialStyle} className="d-none d-lg-block px-0">
       <div className="social-banner-box">
-        <a href="" className="btn-setting">
-          LinkedIn
+        <a
+          href="https://www.linkedin.com/in/ponpitak-s-73162527a/"
+          target="_blank"
+          rel="noreferrer"
+          className="btn-setting-social"
+        >
+          <Icon icon="ri:linkedin-fill" width="24" height="24" />
         </a>
-        <a href="" className="btn-setting">
-          Github
+        <a
+          href="https://github.com/bpsrm"
+          target="_blank"
+          rel="noreferrer"
+          className="btn-setting-social"
+        >
+          <Icon icon="ri:github-fill" width="24" height="24" />
         </a>
-        <a href="" className="btn-setting">
-          Instagram
+        <a
+          href="https://www.instagram.com/bp.srm/"
+          target="_blank"
+          rel="noreferrer"
+          className="btn-setting-social"
+        >
+          <Icon icon="mdi:instagram" width="24" height="24" />
         </a>
       </div>
     </div>

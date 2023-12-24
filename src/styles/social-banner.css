@@ -1,7 +1,27 @@
 .social-banner-box {
-  width: 70px;
+  width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: var(--whiteColor);
+}
+
+.btn-setting-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+  padding: 15px;
+  margin: 10px;
+  text-decoration: none;
+  color: var(--darkColor);
+  background-color: var(--whiteColor);
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.btn-setting-social:hover {
+  color: var(--whiteColor);
+  background-color: var(--darkColor);
 }

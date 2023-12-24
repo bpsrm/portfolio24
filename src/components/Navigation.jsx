@@ -1,31 +1,121 @@
 import { Container, Row, Col, Nav, Navbar } from "react-bootstrap";
+import { Icon } from "@iconify/react";
+import { Link } from "react-scroll";
+import { useState } from "react";
 
 const Navigation = () => {
+  const [theme, setTheme] = useState("dark");
+  const [themeIcon, setThemeIcon] = useState("moon");
+
+  const changeTheme = () => {
+    const currentTheme = document.body.getAttribute("data-theme");
+    if (currentTheme === "light") {
+      document.body.setAttribute("data-theme", "dark");
+      setTheme("dark");
+      setThemeIcon("moon");
+    } else {
+      document.body.setAttribute("data-theme", "light");
+      setTheme("light");
+      setThemeIcon("sun");
+    }
+  };
+
   return (
-    <Container className="fixed-top">
+    <Container className="fixed-top d-none d-lg-block">
       <Row className="justify-content-center">
         <Col md={12} lg={7} className="navbar-col">
           <Navbar expand="lg">
             <Container className="py-2">
               <Nav className="w-100 d-flex flex-row justify-content-between">
-                <Nav.Link href="#home" className="">
-                  <i className="fa-solid fa-house pe-2"></i> HOME
-                </Nav.Link>
-                <Nav.Link href="#about" className="">
-                  <i className="fa-solid fa-user pe-2"></i> ABOUT
-                </Nav.Link>
-                <Nav.Link href="#experience" className="">
-                  <i className="fa-solid fa-book pe-2"></i> EXPERIENCE
-                </Nav.Link>
-                <Nav.Link href="#project" className="">
-                  <i className="fa-solid fa-folder pe-2"></i> PROJECTS
-                </Nav.Link>
-                <Nav.Link href="#contact" className="">
-                  <i className="fa-solid fa-message pe-2"></i> CONTACT
-                </Nav.Link>
-                <Nav.Link href="#theme" className="">
-                  <i className="fa-solid fa-moon pe-2"></i> THEME
-                </Nav.Link>
+                <Link
+                  to="home"
+                  className="nav-link"
+                  duration={300}
+                  smooth={true}
+                  spy={true}
+                  activeClass="active"
+                >
+                  <Icon
+                    icon="mynaui:home"
+                    width="20"
+                    height="20"
+                    className="me-2"
+                  />
+                  HOME
+                </Link>
+                <Link
+                  to="about"
+                  className="nav-link"
+                  duration={300}
+                  smooth={true}
+                  spy={true}
+                  activeClass="active"
+                >
+                  <Icon
+                    icon="solar:user-linear"
+                    width="20"
+                    height="20"
+                    className="me-2"
+                  />
+                  ABOUT
+                </Link>
+                <Link
+                  to="experience"
+                  className="nav-link"
+                  duration={300}
+                  smooth={true}
+                  spy={true}
+                  activeClass="active"
+                >
+                  <Icon
+                    icon="iconoir:book"
+                    width="20"
+                    height="20"
+                    className="me-2"
+                  />
+                  EXPERIENCE
+                </Link>
+                <Link
+                  to="projects"
+                  className="nav-link"
+                  duration={300}
+                  smooth={true}
+                  spy={true}
+                  activeClass="active"
+                >
+                  <Icon
+                    icon="mingcute:folder-line"
+                    width="20"
+                    height="20"
+                    className="me-2"
+                  />
+                  PROJECTS
+                </Link>
+                <Link
+                  to="contact"
+                  className="nav-link"
+                  duration={300}
+                  smooth={true}
+                  spy={true}
+                  activeClass="active"
+                >
+                  <Icon
+                    icon="tabler:message"
+                    width="20"
+                    height="20"
+                    className="me-2"
+                  />
+                  CONTACT
+                </Link>
+                <div className="nav-link" onClick={changeTheme}>
+                  <Icon
+                    icon={`ph:${themeIcon}-light`}
+                    width="20"
+                    height="20"
+                    className="me-2"
+                  />
+                  {theme}
+                </div>
               </Nav>
             </Container>
           </Navbar>
