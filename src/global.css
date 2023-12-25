@@ -1,33 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap");
 
-:root {
-  --navBG: rgba(255, 255, 255, 0.8);
-  --whiteColor: #fff;
-  --lightGrayColor: #ccc;
-  --whiteDropColor: #fafafa;
-  --grayColor: #888;
-  --blackColor: #111;
-  --darkColor: #1b1b1b;
-  --lightBlueColor: #c6d6ff;
-  --blueColor: #7286d3;
-  --gradient: linear-gradient(
-    to bottom,
-    var(--blueColor),
-    var(--lightBlueColor)
-  );
-  --skillColor: #eee;
-  --shadow: 0 4px 5px 2px rgba(142, 167, 233, 0.5);
-  --url: url("./assets/banner-white.png");
-}
-
 [data-theme="dark"] {
   --navBG: rgba(27, 27, 27, 0.8);
-  --whiteColor: #1b1b1b;
+  --blackToWhite: #1b1b1b;
   --lightGrayColor: #ccc;
-  --whiteDropColor: #1b1b1b;
+  --dropColor: #1b1b1b;
   --grayColor: #fafafa;
-  --blackColor: #111;
-  --darkColor: #fff;
+  --darkToWhite: #111;
+  --whiteToBlack: #fff;
+  --whiteToBlue: #fff;
+  --blueToBlack: #1b1b1b;
+
   --lightBlueColor: #c6d6ff;
   --blueColor: #7286d3;
   --gradient: linear-gradient(
@@ -35,9 +18,31 @@
     var(--blueColor),
     var(--lightBlueColor)
   );
-  --skillColor: #111;
+  --darkToWhite: #111;
   --shadow: 0 4px 5px 2px rgba(27, 27, 27, 0.5);
   --url: url("./assets/banner-black.png");
+}
+
+[data-theme="light"] {
+  --navBG: rgba(255, 255, 255, 0.8);
+  --blackToWhite: #fff;
+  --lightGrayColor: #ccc;
+  --dropColor: #fafafa;
+  --grayColor: #888;
+  --darkToWhite: #111;
+  --whiteToBlack: #1b1b1b;
+  --whiteToBlue: #c6d6ff;
+  --blueToBlack: #7286d3;
+  --lightBlueColor: #c6d6ff;
+  --blueColor: #7286d3;
+  --gradient: linear-gradient(
+    to bottom,
+    var(--blueColor),
+    var(--lightBlueColor)
+  );
+  --darkToWhite: #eee;
+  --shadow: 0 4px 5px 2px rgba(142, 167, 233, 0.5);
+  --url: url("./assets/banner-white.png");
 }
 
 * {
@@ -47,12 +52,6 @@
   font-family: "Source Sans 3", sans-serif;
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
 h1,
 h2,
 h3,
@@ -65,7 +64,7 @@ h6 {
 .welcome {
   font-size: 32px !important;
   font-weight: 700 !important;
-  color: var(--darkColor);
+  color: var(--whiteToBlack);
 }
 
 .btn-setting {
@@ -94,7 +93,7 @@ h6 {
   display: flex !important;
   justify-content: space-between;
   align-items: center;
-  color: var(--darkColor) !important;
+  color: var(--whiteToBlack) !important;
   font-size: 16px !important;
   padding: 10px !important;
   border-radius: 10px !important;
@@ -110,7 +109,8 @@ h6 {
 }
 
 .banner-container,
-.about-container {
+.about-container,
+.experience-container {
   padding: 50px 0;
 }
 
@@ -137,14 +137,14 @@ h6 {
 .btn-resume {
   width: inherit !important;
   background-color: var(--blueColor);
-  color: var(--whiteColor);
+  color: var(--blackToWhite);
   border-radius: 5px;
   border: 1px solid var(--blueColor);
   box-shadow: var(--shadow);
 }
 
 .btn-resume:hover {
-  background-color: var(--whiteColor);
+  background-color: var(--blackToWhite);
   border: 1px solid var(--blueColor);
   color: var(--blueColor);
 }
@@ -195,7 +195,7 @@ h6 {
   padding: 0 10px;
   font-size: 16px;
   font-weight: 600;
-  color: var(--darkColor);
+  color: var(--whiteToBlack);
 }
 
 .box-title {
@@ -206,7 +206,7 @@ h6 {
 }
 
 .title {
-  color: var(--darkColor);
+  color: var(--whiteToBlack);
   text-transform: uppercase;
   font-size: 36px;
   font-weight: 600;
@@ -228,7 +228,7 @@ h6 {
 
 /* About */
 .about-container {
-  background-color: var(--whiteDropColor);
+  background-color: var(--dropColor);
 }
 
 .img-about {
@@ -240,12 +240,12 @@ h6 {
   line-height: 25px;
   padding: 20px 50px;
   text-wrap: wrap;
-  color: var(--darkColor);
+  color: var(--whiteToBlack);
 }
 
 .expertise-box {
   margin-top: 0px;
-  color: var(--darkColor);
+  color: var(--whiteToBlack);
 }
 
 .expertise-box h3 {
@@ -266,7 +266,7 @@ h6 {
 .expertise li {
   width: fit-content;
   padding: 5px 10px;
-  background-color: var(--skillColor);
+  background-color: var(--darkToWhite);
   color: var(--grayColor);
   margin: 5px;
   border-radius: 5px;
@@ -278,6 +278,47 @@ h6 {
   justify-content: flex-start;
   align-items: center;
 }
+
+/* Experience */
+
+.experience-container {
+  background-color: var(--darkToWhite);
+}
+
+.exp-box {
+  color: var(--whiteToBlack);
+}
+
+.exp-box .topic {
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.exp-box h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.exp-box h3 {
+  font-size: 32px;
+  padding: 20px 0;
+  font-weight: 400;
+}
+
+.exp-box h4 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.topic-line {
+  margin-top: 50px;
+  width: 75%;
+  border: 2px solid var(--blueColor);
+  border-radius: 20px;
+}
+
+/* Breakpoint */
 
 @media (min-width: 576px) {
   .banner-container {

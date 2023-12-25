@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: var(--whiteColor);
+  background-color: var(--blackToWhite);
 }
 
 .btn-setting-social {
@@ -15,13 +15,13 @@
   padding: 15px;
   margin: 10px;
   text-decoration: none;
-  color: var(--darkColor);
-  background-color: var(--whiteColor);
+  color: var(--whiteToBlack);
+  background-color: var(--blackToWhite);
   border-radius: 10px;
   font-size: 18px;
 }
 
 .btn-setting-social:hover {
-  color: var(--whiteColor);
-  background-color: var(--darkColor);
+  color: var(--blueToBlack);
+  background-color: var(--whiteToBlue);
 }

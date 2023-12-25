@@ -4,7 +4,7 @@ import Profile from "@assets/banner-profile.jpg";
 import Resume from "@assets/resume-ponpitak.pdf";
 
 //components
-import SocialBanner from "./SocialBanner";
+import SocialBanner from "../components/SocialBanner";
 
 const Banner = () => {
   return (
@@ -22,7 +22,7 @@ const Banner = () => {
             style={{
               fontSize: "20px",
               marginBottom: "20px",
-              color: "var(--darkColor)",
+              color: "var(--whiteToBlack)",
             }}
           >
             New Graduates Transforming Dreams into Web Development Realities.

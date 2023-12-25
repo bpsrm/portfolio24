@@ -1,8 +1,11 @@
 //components
 import Navbar from "@components/Navigation";
 import NavbarMobile from "@components/NavbarMobile";
-import Banner from "@components/Banner";
-import About from "@components/About";
+
+//pages
+import Banner from "@pages/Banner";
+import About from "@pages/About";
+import Experience from "@pages/Experience";
 
 export default function App() {
   return (
@@ -14,6 +17,9 @@ export default function App() {
       </section>
       <section id="about">
         <About />
+      </section>
+      <section id="experience">
+        <Experience />
       </section>
     </div>
   );
