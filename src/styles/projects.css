@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap");
+
+[data-theme="dark"] {
+  --colorMenu: #fafafa;
+  --backgroundMenu: #111;
+  --bgHoverMenu: #fafafa;
+  --colorHoverMenu: #111;
+  --borderMenu: #fafafa;
+}
+
+[data-theme="light"] {
+  --colorMenu: #888;
+  --backgroundMenu: #eee;
+  --bgHoverMenu: #c6d6ff;
+  --colorHoverMenu: #7286d3;
+  --borderMenu: #eee;
+}
+
+.btn-menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--backgroundMenu);
+  color: var(--colorMenu);
+  border: 1px solid var(--borderMenu);
+  cursor: pointer;
+}
+
+.btn-menu:hover {
+  background-color: var(--bgHoverMenu);
+  color: var(--colorHoverMenu);
+}
+
+.btn-menu.active-menu {
+  background-color: var(--bgHoverMenu);
+  color: var(--colorHoverMenu);
+}

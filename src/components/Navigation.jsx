@@ -4,18 +4,18 @@ import { Link } from "react-scroll";
 import { useState } from "react";
 
 const Navigation = () => {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("DARK");
   const [themeIcon, setThemeIcon] = useState("moon");
 
   const changeTheme = () => {
     const currentTheme = document.body.getAttribute("data-theme");
     if (currentTheme === "light") {
       document.body.setAttribute("data-theme", "dark");
-      setTheme("dark");
+      setTheme("DARK");
       setThemeIcon("moon");
     } else {
       document.body.setAttribute("data-theme", "light");
-      setTheme("light");
+      setTheme("LIGHT");
       setThemeIcon("sun");
     }
   };

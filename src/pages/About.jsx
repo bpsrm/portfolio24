@@ -1,5 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Profile from "@assets/about-profile.jpg";
+
+//data
 import { expertise } from "@data/expertise";
 
 const About = () => {

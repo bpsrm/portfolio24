@@ -58,7 +58,7 @@ const NavbarMobile = () => {
               <Icon icon="iconoir:book" width="18" height="18" />
             </Link>
             <Link
-              to="project"
+              to="projects"
               className="d-flex align-items-center nav-link"
               duration={300}
               smooth={true}

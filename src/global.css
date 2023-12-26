@@ -10,7 +10,6 @@
   --whiteToBlack: #fff;
   --whiteToBlue: #fff;
   --blueToBlack: #1b1b1b;
-
   --lightBlueColor: #c6d6ff;
   --blueColor: #7286d3;
   --gradient: linear-gradient(
@@ -21,6 +20,7 @@
   --darkToWhite: #111;
   --shadow: 0 4px 5px 2px rgba(27, 27, 27, 0.5);
   --url: url("./assets/banner-black.png");
+  --silpakornLogo: invert(100%);
 }
 
 [data-theme="light"] {
@@ -43,6 +43,7 @@
   --darkToWhite: #eee;
   --shadow: 0 4px 5px 2px rgba(142, 167, 233, 0.5);
   --url: url("./assets/banner-white.png");
+  --nablaLogo: invert(100%);
 }
 
 * {
@@ -58,7 +59,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .welcome {
@@ -223,7 +224,7 @@ h6 {
   height: 5px;
   border-bottom: 5px solid var(--blueColor);
   border-radius: 10px;
-  margin-bottom: 50px;
+  margin: 10px 0 50px 0;
 }
 
 /* About */
@@ -281,42 +282,88 @@ h6 {
 
 /* Experience */
 
+.exp-row {
+  padding: 0 10px 50px 10px;
+}
+
 .experience-container {
   background-color: var(--darkToWhite);
 }
 
 .exp-box {
   color: var(--whiteToBlack);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.exp-box .topic {
+.topic {
   font-weight: 600;
   padding-bottom: 30px;
+  color: var(--whiteToBlack);
 }
 
 .exp-box h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 600;
 }
 
 .exp-box h3 {
-  font-size: 32px;
+  font-size: 20px;
   padding: 20px 0;
   font-weight: 400;
 }
 
 .exp-box h4 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 40px;
 }
 
 .topic-line {
-  margin-top: 50px;
   width: 75%;
   border: 2px solid var(--blueColor);
   border-radius: 20px;
+  margin-top: 50px;
 }
+
+.btn-link {
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.25s ease-in;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none !important;
+  color: var(--whiteToBlack);
+  border: 1px solid var(--whiteToBlack);
+}
+
+.btn-link:hover {
+  color: var(--blackToWhite) !important;
+  background-color: var(--whiteToBlack);
+}
+
+.description-nabla {
+  width: 100%;
+}
+
+.img-education {
+  width: 100%;
+}
+
+.img-nabla {
+  filter: var(--nablaLogo);
+}
+
+.img-silpakorn {
+  width: 75%;
+  filter: var(--silpakornLogo);
+}
+
+/* Projects */
 
 /* Breakpoint */
 
@@ -341,7 +388,16 @@ h6 {
   .about-text {
     padding: 0;
   }
+  .exp-row {
+    padding: 0 50px 50px 50px;
+  }
   .expertise-box {
     margin-top: 30px;
+  }
+  .description-nabla {
+    width: 75%;
+  }
+  .img-silpakorn {
+    width: 50%;
   }
 }
