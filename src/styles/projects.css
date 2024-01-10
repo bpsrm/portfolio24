@@ -63,3 +63,28 @@
 .card-project-body .card-subtitle {
   padding: 20px 0;
 }
+
+.modal-header .btn-close {
+  background-color: var(--bgHoverMenu) !important;
+}
+
+.modal-content {
+  background-color: var(--blackToWhite) !important;
+}
+
+.project-stack {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.project-stack li {
+  padding: 5px 10px;
+  background-color: var(--backgroundMenu);
+  color: var(--colorMenu);
+  border: 1px solid var(--borderMenu);
+  margin: 5px;
+  border-radius: 5px;
+}

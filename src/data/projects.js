@@ -13,6 +13,16 @@ import designThree from "@assets/projects/uxui/uxui-3.jpg";
 import designFour from "@assets/projects/uxui/uxui-4.jpg";
 import designFive from "@assets/projects/uxui/uxui-5.jpg";
 
+//graphics
+import graphicsOne from "@assets/projects/graphics/artwork1.jpg";
+import graphicsTwo from "@assets/projects/graphics/artwork2.jpg";
+import graphicsThree from "@assets/projects/graphics/illus1.jpg";
+import graphicsFour from "@assets/projects/graphics/illus2.jpg";
+import graphicsFive from "@assets/projects/graphics/illus3.jpg";
+import graphicsSix from "@assets/projects/graphics/illus4.jpg";
+import graphicsSeven from "@assets/projects/graphics/illus5.jpg";
+import graphicsEight from "@assets/projects/graphics/illus6.jpg";
+
 export const workspace = {
   website: [
     {
@@ -269,7 +279,42 @@ export const workspace = {
   graphics: [
     {
       id: 1,
-      source: "",
+      source: graphicsOne,
+      description: "",
+    },
+    {
+      id: 2,
+      source: graphicsTwo,
+      description: "",
+    },
+    {
+      id: 3,
+      source: graphicsThree,
+      description: "",
+    },
+    {
+      id: 4,
+      source: graphicsFour,
+      description: "",
+    },
+    {
+      id: 5,
+      source: graphicsFive,
+      description: "",
+    },
+    {
+      id: 6,
+      source: graphicsSix,
+      description: "",
+    },
+    {
+      id: 7,
+      source: graphicsSeven,
+      description: "",
+    },
+    {
+      id: 8,
+      source: graphicsEight,
       description: "",
     },
   ],
