@@ -9,38 +9,8 @@ export const All = () => {
   return (
     <Container>
       <Row>
-        <Col xs={8}>
-          <h1>Web Designing </h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          dolores nulla ad natus doloremque ea enim ex maxime eos facere,
-          consequatur incidunt quam nemo porro, vel rem perferendis aut modi
-          perspiciatis earum? Ullam soluta porro neque consequuntur libero sit
-          alias doloremque iusto repudiandae, distinctio, odit vitae unde
-          perferendis aliquid officia tempore aut. Consectetur ratione error a
-          corrupti accusamus? Perferendis dolor dolores nesciunt dignissimos
-          eveniet veniam reiciendis architecto repudiandae corrupti distinctio
-          sint placeat, voluptate nulla ex tempora incidunt doloribus! Amet
-          excepturi labore, vero quae quo cum accusamus, dolorum laudantium
-          doloribus quisquam commodi, laborum provident nobis totam natus
-          impedit expedita illum. Harum!
-        </Col>
-        <Col xs={4}>
-          <h1>
-            UX/UI Web <br /> Designing
-          </h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          dolores nulla ad natus doloremque ea enim ex maxime eos facere,
-          consequatur incidunt quam nemo porro, vel rem perferendis aut modi
-          perspiciatis earum? Ullam soluta porro neque consequuntur libero sit
-          alias doloremque iusto repudiandae, distinctio, odit vitae unde
-          perferendis aliquid officia tempore aut. Consectetur ratione error a
-          corrupti accusamus? Perferendis dolor dolores nesciunt dignissimos
-          eveniet veniam reiciendis architecto repudiandae corrupti distinctio
-          sint placeat, voluptate nulla ex tempora incidunt doloribus! Amet
-          excepturi labore, vero quae quo cum accusamus, dolorum laudantium
-          doloribus quisquam commodi, laborum provident nobis totam natus
-          impedit expedita illum. Harum!
-        </Col>
+        <Col xs={8}></Col>
+        <Col xs={4}></Col>
       </Row>
     </Container>
   );
@@ -53,11 +23,14 @@ export const Website = () => {
     <Container>
       <Row>
         {website.map((project) => (
-          <Col xs={4} key={project.id}>
-            <Card className="m-3 text-start">
-              <Card.Title>{project.projectName}</Card.Title>
-              <Card.Subtitle>{project.date}</Card.Subtitle>
-              <Card.Body>{project.description}</Card.Body>
+          <Col xs={12} md={4} lg={3} key={project.id}>
+            <Card className="m-3 card-project">
+              <Card.Img src={project.resource} className="img-card" />
+              <Card.Body className="p-3 text-start card-project-body">
+                <Card.Title>{project.projectName}</Card.Title>
+                <Card.Subtitle>{project.date}</Card.Subtitle>
+                {/* <Card.Text>{project.description}</Card.Text> */}
+              </Card.Body>
             </Card>
           </Col>
         ))}

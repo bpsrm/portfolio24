@@ -1,3 +1,18 @@
+import hercules from "@assets/projects/hercules-club.webp";
+import lasante from "@assets/projects/la-sante.webp";
+import voicebrary from "@assets/projects/senior-project.webp";
+import weather from "@assets/projects/weather-app.webp";
+import todo from "@assets/projects/todoapp.webp";
+import discord from "@assets/projects/discord-clone.webp";
+import crud from "@assets/projects/crud-typescript-redux.webp";
+
+//uxui
+import designOne from "@assets/projects/uxui/uxui-1.jpg";
+import designTwo from "@assets/projects/uxui/uxui-2.jpg";
+import designThree from "@assets/projects/uxui/uxui-3.jpg";
+import designFour from "@assets/projects/uxui/uxui-4.jpg";
+import designFive from "@assets/projects/uxui/uxui-5.jpg";
+
 export const workspace = {
   website: [
     {
@@ -6,9 +21,9 @@ export const workspace = {
       date: "Sep 2020 - Nov 2020",
       description:
         "The 2nd year mid-semester project in web and interactive application on the topic of health care website",
-      demo: "",
-      resource: "",
-      reference: "",
+      demo: "https://herculesclub-2bc50.web.app/",
+      resource: hercules,
+      reference: "https://github.com/bpsrm/MidProject-2020-HerculesClub",
       stack: [
         {
           id: 1,
@@ -30,9 +45,9 @@ export const workspace = {
       date: "Nov 2020 - Mar 2021",
       description:
         "The 2nd year final-semester project in web and interactive application on the topic of hospital website",
-      demo: "",
-      resource: "",
-      reference: "",
+      demo: "https://la-sante-final-project-2020.onrender.com/",
+      resource: lasante,
+      reference: "https://github.com/bpsrm/FinalProject-2020-La-Sante",
       stack: [
         {
           id: 1,
@@ -54,9 +69,9 @@ export const workspace = {
       date: "Jul 2022 - Apr 2023",
       description:
         "Web App: Instant Audio Image Insights for Low Vision Learners via Object-Text Detection and Knowledge Base",
-      demo: "",
-      resource: "",
-      reference: "",
+      demo: "https://www.youtube.com/watch?v=-caDoPUdlLE",
+      resource: voicebrary,
+      reference: "https://github.com/bpsrm/my-senior-project",
       stack: [
         {
           id: 1,
@@ -94,9 +109,9 @@ export const workspace = {
       date: "Sep 2023",
       description:
         "Weather Forecast Website: Focus on Thailand, Utilizing openweathermap.org APIs",
-      demo: "",
-      resource: "",
-      reference: "",
+      demo: "https://weather-app-react-31c0e.web.app/",
+      resource: weather,
+      reference: "https://github.com/bpsrm/weather-app-react",
       stack: [
         {
           id: 1,
@@ -130,9 +145,9 @@ export const workspace = {
       date: "Sep 2023",
       description:
         "To-Do Web App with React: Utilizing useState, useEffect, and Bootstrap. Implements CRUD with localStorage",
-      demo: "",
-      resource: "",
-      reference: "",
+      demo: "https://todoapp-6e72e.web.app/",
+      resource: todo,
+      reference: "https://github.com/bpsrm/TodoApp",
       stack: [
         {
           id: 1,
@@ -166,9 +181,9 @@ export const workspace = {
       date: "Sep 2023",
       description:
         "Vue3 Discord Clone: Web Application Project using Vite for Rapid Development",
-      demo: "",
-      resource: "",
-      reference: "",
+      demo: "https://vue-cloning-discord.web.app/",
+      resource: discord,
+      reference: "https://github.com/bpsrm/vue-cloning-discord",
       stack: [
         {
           id: 1,
@@ -190,13 +205,13 @@ export const workspace = {
     },
     {
       id: 7,
-      projectName: "TypeScript Redux Toolkit CRUD",
+      projectName: "TS Redux Toolkit CRUD",
       date: "Dec 2023",
       description:
         "CRUD project with React TypeScript and use Redux Toolkit & LocalStorage to manage data",
-      demo: "",
-      resource: "",
-      reference: "",
+      demo: "https://crud-react-ts-redux.web.app/",
+      resource: crud,
+      reference: "https://github.com/bpsrm/react-ts-redux",
       stack: [
         {
           id: 1,
@@ -232,23 +247,23 @@ export const workspace = {
   design: [
     {
       id: 1,
-      source: "",
+      source: designOne,
     },
     {
       id: 2,
-      source: "",
+      source: designTwo,
     },
     {
       id: 3,
-      source: "",
+      source: designThree,
     },
     {
       id: 4,
-      source: "",
+      source: designFour,
     },
     {
       id: 5,
-      source: "",
+      source: designFive,
     },
   ],
   graphics: [

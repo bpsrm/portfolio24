@@ -2,10 +2,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Icon } from "@iconify/react";
 
-import Hiomatsuri from "@assets/hiomatsuri.png";
-import Dotwishion from "@assets/dotwishion.png";
-import Silpakorn from "@assets/silpakorn.png";
-import Nabla from "@assets/nabla.png";
+import Hiomatsuri from "@assets/experience/hiomatsuri.png";
+import Dotwishion from "@assets/experience/dotwishion.png";
+import Silpakorn from "@assets/experience/silpakorn.png";
+import Nabla from "@assets/experience/nabla.png";
 
 const Experience = () => {
   return (

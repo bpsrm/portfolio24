@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import Profile from "@assets/about-profile.jpg";
+import Profile from "@assets/profile/about-profile.jpg";
 
 //data
 import { expertise } from "@data/expertise";

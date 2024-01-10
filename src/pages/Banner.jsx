@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Container, Row } from "react-bootstrap";
-import Profile from "@assets/banner-profile.jpg";
+import Profile from "@assets/profile/banner-profile.jpg";
 import Resume from "@assets/resume-ponpitak.pdf";
 
 //components

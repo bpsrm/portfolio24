@@ -38,3 +38,28 @@
   background-color: var(--bgHoverMenu);
   color: var(--colorHoverMenu);
 }
+
+.card-project {
+  border: 0 !important;
+  border-radius: 10px !important;
+  background-color: var(--backgroundMenu) !important;
+  min-height: 250px;
+}
+
+.img-card {
+  width: 100%;
+  height: 250px;
+  z-index: 10;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px 10px 0px 50px !important;
+}
+
+.card-project-body {
+  border-radius: 0px 50px 10px 10px !important;
+  color: var(--whiteToBlack) !important;
+}
+
+.card-project-body .card-subtitle {
+  padding: 20px 0;
+}
