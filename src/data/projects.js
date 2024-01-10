@@ -1,10 +1,10 @@
-import hercules from "@assets/projects/hercules-club.webp";
-import lasante from "@assets/projects/la-sante.webp";
-import voicebrary from "@assets/projects/senior-project.webp";
-import weather from "@assets/projects/weather-app.webp";
-import todo from "@assets/projects/todoapp.webp";
-import discord from "@assets/projects/discord-clone.webp";
-import crud from "@assets/projects/crud-typescript-redux.webp";
+import hercules from "@assets/projects/website/hercules-club.webp";
+import lasante from "@assets/projects/website/la-sante.webp";
+import voicebrary from "@assets/projects/website/senior-project.webp";
+import weather from "@assets/projects/website/weather-app.webp";
+import todo from "@assets/projects/website/todoapp.webp";
+import discord from "@assets/projects/website/discord-clone.webp";
+import crud from "@assets/projects/website/crud-typescript-redux.webp";
 
 //uxui
 import designOne from "@assets/projects/uxui/uxui-1.jpg";
