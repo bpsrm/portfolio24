@@ -19,6 +19,7 @@ export const expertise = {
     { id: 17, skill: "Rest API" },
     { id: 18, skill: "Bootstrap" },
     { id: 19, skill: "Tailwind CSS" },
+    { id: 20, skill: "Iconify" },
   ],
   design: [
     { id: 1, skill: "Adobe PhotoShop" },

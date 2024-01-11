@@ -67,16 +67,6 @@ const NavbarMobile = () => {
             >
               <Icon icon="mingcute:folder-line" width="18" height="18" />
             </Link>
-            <Link
-              to="contact"
-              className="d-flex align-items-center nav-link"
-              duration={300}
-              smooth={true}
-              spy={true}
-              activeClass="active"
-            >
-              <Icon icon="tabler:message" width="18" height="18" />
-            </Link>
             <div
               className="d-flex align-items-center nav-link"
               onClick={changeTheme}

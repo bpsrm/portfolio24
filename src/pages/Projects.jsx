@@ -6,7 +6,7 @@ import "@styles/projects.css";
 import ProjectMenu from "@components/ProjectMenu";
 
 const Projects = () => {
-  const items = ["All", "Website", "UX/UI", "Graphics Design"];
+  const items = ["All", "Website", "UX/UI", "Graphics"];
   const [menu, setMenu] = useState("All");
   const handleMenuClick = (menuItem) => {
     setMenu(menuItem);

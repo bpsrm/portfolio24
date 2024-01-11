@@ -279,43 +279,59 @@ export const workspace = {
   graphics: [
     {
       id: 1,
+      topic: "Crescent Night With A Killer",
       source: graphicsOne,
-      description: "",
+      description:
+        "In the final project for the course COMPUTER GRAPHICS AND DESIGN, design a character including its appearance, attire, weapons, and pets. Also, design a cover page that incorporates perspective in building structures.",
     },
     {
       id: 2,
+      topic: "New Festival : Rat Year 2020",
       source: graphicsTwo,
-      description: "",
+      description:
+        "The design work includes character design and the mascot 'Gui' as the official mascot of the ICT Faculty at Silpakorn University, as well as the 'Motorcycle Building' in the first semester of 2020, the year of the Rat.",
     },
     {
       id: 3,
+      topic: "Geometric Human",
       source: graphicsThree,
-      description: "",
+      description:
+        "The selection of pictures that we are interested and use artistic elements such as lines to design.",
     },
     {
       id: 4,
+      topic: "Buddha",
       source: graphicsFour,
-      description: "",
+      description:
+        "It is a Buddhist image that holds the mind and keeps the light leading to the bright way to the Lord Buddha.",
     },
     {
       id: 5,
+      topic: "Jesus & Father Bosco",
       source: graphicsFive,
-      description: "",
+      description:
+        "The creation of religious works with the mind that holds the mind, such as Jesus and Father Bosco, which are like the father of the youth.",
     },
     {
       id: 6,
+      topic: "S P A C E",
       source: graphicsSix,
-      description: "",
+      description:
+        "Designed by the topic from space There is a cutting of letters to be unique, even if it was reduced, but still understood. And the symbol of space. When we talk about it, we think of stars and astronauts.",
     },
     {
       id: 7,
+      topic: "Feel Hot",
       source: graphicsSeven,
-      description: "",
+      description:
+        "When looking at the picture, we can feel the atmosphere. There is a heat like we walk in the middle of the desert in Egypt.",
     },
     {
       id: 8,
+      topic: "So Cool",
       source: graphicsEight,
-      description: "",
+      description:
+        "Like the pyramid image. When we look, it will find the cold, both the color tone and the atmosphere in the art.",
     },
   ],
 };

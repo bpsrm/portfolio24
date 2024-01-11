@@ -91,22 +91,6 @@ const Navigation = () => {
                   />
                   PROJECTS
                 </Link>
-                <Link
-                  to="contact"
-                  className="nav-link"
-                  duration={300}
-                  smooth={true}
-                  spy={true}
-                  activeClass="active"
-                >
-                  <Icon
-                    icon="tabler:message"
-                    width="20"
-                    height="20"
-                    className="me-2"
-                  />
-                  CONTACT
-                </Link>
                 <div className="nav-link" onClick={changeTheme}>
                   <Icon
                     icon={`ph:${themeIcon}-light`}

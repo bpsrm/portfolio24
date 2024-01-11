@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Container, Row, Col, Card, Modal } from "react-bootstrap";
 import { useState, useEffect } from "react";
+import { Icon } from "@iconify/react";
 
 //data
 import { workspace } from "@data/projects";
@@ -34,11 +35,11 @@ export const All = () => {
   return (
     <Container className="mt-4">
       <Row>
-        <Col xs={8} style={hightBox}>
+        <Col xs={12} md={8} style={hightBox}>
           <img src={web} alt="web designing" style={imgBox} />
           <h3 style={description}>Web Designing</h3>
         </Col>
-        <Col xs={4} style={hightBox}>
+        <Col xs={12} md={4} style={hightBox} className="mt-4 mt-lg-0">
           <img src={design} alt="web designing" style={imgBox} />
           <h3 style={description}>
             UX/UI - Web <br /> Design
@@ -46,14 +47,14 @@ export const All = () => {
         </Col>
       </Row>
       <Row className="mt-4">
-        <Col xs={4} style={hightBox}>
+        <Col xs={12} md={4} style={hightBox}>
           <img src={graphics} alt="web designing" style={imgBox} />
           <h3 style={description}>
             Graphic <br />
             Designing
           </h3>
         </Col>
-        <Col xs={8} style={hightBox}>
+        <Col xs={12} md={8} style={hightBox} className="mt-4 mt-lg-0">
           <img src={webDesign} alt="web designing" style={imgBox} />
           <h3 style={description}>Web Development</h3>
         </Col>
@@ -144,8 +145,92 @@ export const ShowModal = ({ id, handleClose }) => {
         <p>
           <b>Date:</b> {project.date}
         </p>
+        <Row className="mx-1">
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noreferrer"
+            className="btn-setting btn-modal main me-2"
+          >
+            <Icon
+              icon="material-symbols:link"
+              width={24}
+              height={24}
+              className="me-2"
+            />
+            Demo
+          </a>
+          <a
+            href={project.reference}
+            target="_blank"
+            rel="noreferrer"
+            className="btn-setting btn-modal"
+          >
+            <Icon
+              icon="mingcute:code-line"
+              width="24"
+              height="24"
+              className="me-2"
+            />
+            Source
+          </a>
+        </Row>
       </Modal.Body>
     </Modal>
+  );
+};
+
+export const Design = () => {
+  const designData = workspace.design;
+  return (
+    <Container>
+      <Row className="justify-content-center mt-5">
+        {designData.map((design) => (
+          <Col key={design.id} xs={4} md={3} lg={2}>
+            <img src={design.source} alt="" className="img-fluid" />
+          </Col>
+        ))}
+      </Row>
+    </Container>
+  );
+};
+
+export const Graphics = () => {
+  const artwork = workspace.graphics;
+  const [hoveredCard, setHoveredCard] = useState(null);
+
+  const showGraphicsInfo = (id) => {
+    const project = artwork.find((item) => item.id === id);
+    console.log(project);
+  };
+
+  return (
+    <Container>
+      <Row>
+        {artwork.map((graphics) => (
+          <Col
+            xs={6}
+            md={4}
+            lg={3}
+            key={graphics.id}
+            className="mt-4"
+            onMouseEnter={() => setHoveredCard(graphics.id)}
+            onMouseLeave={() => setHoveredCard(null)}
+            onClick={() => showGraphicsInfo(graphics.id)}
+          >
+            <Card className={hoveredCard === graphics.id ? "hoveredCard" : ""}>
+              <img src={graphics.source} alt="" />
+              {hoveredCard === graphics.id && (
+                <div className="cardOverlay">
+                  <h4>{graphics.topic}</h4>
+                  <p>{graphics.description}</p>
+                </div>
+              )}
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 };
 
@@ -160,6 +245,8 @@ const ProjectMenu = ({ menu }) => {
     <Container>
       {menuActive == "All" ? <All /> : ""}
       {menuActive == "Website" ? <Website /> : ""}
+      {menuActive == "UX/UI" ? <Design /> : ""}
+      {menuActive == "Graphics" ? <Graphics /> : ""}
     </Container>
   );
 };

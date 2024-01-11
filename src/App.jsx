@@ -7,6 +7,7 @@ import Banner from "@pages/Banner";
 import About from "@pages/About";
 import Experience from "@pages/Experience";
 import Projects from "@pages/Projects";
+import Footer from "@pages/Footer";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
       <section id="projects">
         <Projects />
       </section>
+      <Footer />
     </div>
   );
 }

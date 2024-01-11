@@ -361,7 +361,11 @@ h6 {
   filter: var(--silpakornLogo);
 }
 
-/* Projects */
+/* Footer */
+.link-social:hover {
+  transition: all 0.25s ease-in;
+  color: var(--blueColor) !important;
+}
 
 /* Breakpoint */
 
