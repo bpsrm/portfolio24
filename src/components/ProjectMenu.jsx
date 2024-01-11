@@ -209,7 +209,7 @@ export const Graphics = () => {
       <Row>
         {artwork.map((graphics) => (
           <Col
-            xs={6}
+            xs={12}
             md={4}
             lg={3}
             key={graphics.id}

@@ -58,7 +58,7 @@ const Footer = () => {
             <Row className="justify-content-start">
               {socialItem.map((item) => (
                 <Col
-                  xs={3}
+                  xs={2}
                   md={1}
                   key={item.id}
                   className="d-flex justify-content-center me-3"
