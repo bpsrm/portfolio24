@@ -5,6 +5,7 @@ import weather from "@assets/projects/website/weather-app.webp";
 import todo from "@assets/projects/website/todoapp.webp";
 import discord from "@assets/projects/website/discord-clone.webp";
 import crud from "@assets/projects/website/crud-typescript-redux.webp";
+import ancientWonder from "@assets/projects/website/ancient-wonder.webp";
 
 //uxui
 import designOne from "@assets/projects/uxui/uxui-1.jpg";
@@ -250,6 +251,50 @@ export const workspace = {
         {
           id: 7,
           name: "LocalStorage",
+        },
+      ],
+    },
+    {
+      id: 8,
+      projectName: "Ancient Wonders",
+      date: "Jan 2024",
+      description:
+        "Explore the marvels of the world during the Middle Ages with this project powered by Next.js and Node.js, utilizing MySQL for efficient database management.",
+      demo: "",
+      resource: ancientWonder,
+      reference: "https://github.com/bpsrm/Ancient-Wonder",
+      stack: [
+        {
+          id: 1,
+          name: "HTML",
+        },
+        {
+          id: 2,
+          name: "CSS",
+        },
+        {
+          id: 3,
+          name: "TypeScript",
+        },
+        {
+          id: 4,
+          name: "TSX",
+        },
+        {
+          id: 5,
+          name: "Next.js",
+        },
+        {
+          id: 6,
+          name: "Node.js",
+        },
+        {
+          id: 7,
+          name: "Express.js",
+        },
+        {
+          id: 8,
+          name: "MySQL",
         },
       ],
     },
